@@ -17,15 +17,20 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {}
+body.home {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#199fb3+0,46b8ad+100 */
+	background: #199fb3; /* Old browsers */
+	background: -moz-linear-gradient(left,  #199fb3 0%, #46b8ad 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #199fb3 0%,#46b8ad 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #199fb3 0%,#46b8ad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199fb3', endColorstr='#46b8ad',GradientType=1 ); /* IE6-9 */
+
+}
 
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
-	width: 760px;
-}
 
 /*********************
 HEADER STYLES

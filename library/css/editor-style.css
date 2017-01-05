@@ -303,7 +303,7 @@ probably best not to use it. I mean, were you going to anyway? */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: black;
+  color: #414042;
   -webkit-font-smoothing: antialiased;
   /*********************
 	LINK STYLES
@@ -567,7 +567,7 @@ probably best not to use it. I mean, were you going to anyway? */
     body#tinymce.wp-editor table caption {
       margin: 0 0 7px;
       font-size: 0.75em;
-      color: black;
+      color: #414042;
       text-transform: uppercase;
       letter-spacing: 1px; }
   body#tinymce.wp-editor tr {
@@ -590,7 +590,7 @@ probably best not to use it. I mean, were you going to anyway? */
     padding: 0 0 0 0.75em;
     border-left: 3px solid green;
     font-style: italic;
-    color: black; }
+    color: #414042; }
   body#tinymce.wp-editor dd {
     margin-left: 0;
     font-size: 0.9em;
@@ -608,7 +608,7 @@ probably best not to use it. I mean, were you going to anyway? */
     max-width: 100%;
     height: auto; }
   body#tinymce.wp-editor pre {
-    background: black;
+    background: #414042;
     color: #f4f4f4;
     font-size: 0.9em;
     padding: 1.5em;

@@ -488,8 +488,8 @@
 		"uL": 1
 		},
 	"\/library\/scss\/style.scss": {
-		"aP": 1,
-		"bl": 1,
+		"aP": 0,
+		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -497,7 +497,7 @@
 		"oA": 0,
 		"oAP": "\/library\/css\/style.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/library\/translation\/da_DK.mo": {
@@ -909,7 +909,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 504651594,
-	"displayValue": "ffco-wp-starter",
+	"displayValue": "wp-iVet-TeleHealth",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-trap"
 	},

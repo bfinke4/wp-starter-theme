@@ -25,13 +25,17 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+body.home{
+	background-color: $black;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
-	width: 90%;
-	margin: 0 auto;
+/*  WEBSITE MAIN WRAP */
+div#inner-content, div#inner-header, div#inner-footer{
+	@include outer-container(90%);
 }
 
 /*********************
@@ -39,11 +43,11 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: pink;
+	color: $link-color;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: green;
+		color: $link-hover;
 	}
 
 	/* on click */
@@ -113,15 +117,16 @@ HEADER STYLES
 
 .header {
 	background-color: $black;
+	padding: 10px 0px;
+	@include row();
 }
 
 	#logo {
-		margin: 0.75em 0;
-
-		a {
-			color: $white;
-		}
+		margin: 0;
+		@include span-columns(3);
+		background-color: red;
 	}
+
 
 /*********************
 NAVIGATION STYLES
