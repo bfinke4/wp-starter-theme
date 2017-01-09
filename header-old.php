@@ -48,31 +48,15 @@
 
 				<div id="inner-header" class="">
 
-					<div id="logo">
+					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
+					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
-						<a href="<?php bloginfo('url'); ?>">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/library/images/ivet-telehealth-logo.png">
-						</a>
-					</div>
+					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
 
-					<div id="navigation-wrapper" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						
-						<p><button id="trigger-overlay" type="button">Menu</button></p>
-
-						<div class="overlay overlay-scale">
-
-							<button type="button" class="overlay-close">Close</button>
-
-							<div id="logo-overlay">
-								<a href="<?php bloginfo('url'); ?>">
-									<img src="<?php bloginfo('stylesheet_directory'); ?>/library/images/ivet-telehealth-logo-v.png">
-								</a>
-							</div>
-
-							<nav>
-								<?php wp_nav_menu(array(
+					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu',                 // class of container (should you choose to use it)
     					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
@@ -85,9 +69,8 @@
         			               'depth' => 0,                                   // limit the depth of the nav
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
-							</nav>
-						</div>
-					</div>
+
+					</nav>
 
 				</div>
 

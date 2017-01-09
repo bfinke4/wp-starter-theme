@@ -85,6 +85,12 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
+	"\/header-old.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header-old.php",
+		"oF": 0
+		},
 	"\/header.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -171,6 +177,46 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/library\/images\/iv-menu-close-icon.png": {
+		"ft": 32768,
+		"iS": 1548,
+		"oA": 0,
+		"oAP": "\/library\/images\/iv-menu-close-icon.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/library\/images\/iv-menu-icon.png": {
+		"ft": 32768,
+		"iS": 124,
+		"oA": 0,
+		"oAP": "\/library\/images\/iv-menu-icon.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/library\/images\/iv-menu-icon@2x.png": {
+		"ft": 32768,
+		"iS": 179,
+		"oA": 0,
+		"oAP": "\/library\/images\/iv-menu-icon@2x.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/library\/images\/ivet-telehealth-logo-v.png": {
+		"ft": 32768,
+		"iS": 7786,
+		"oA": 0,
+		"oAP": "\/library\/images\/ivet-telehealth-logo-v.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/library\/images\/ivet-telehealth-logo.png": {
+		"ft": 32768,
+		"iS": 9166,
+		"oA": 0,
+		"oAP": "\/library\/images\/ivet-telehealth-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/library\/images\/login-logo.png": {
 		"ft": 32768,
 		"iS": 7019,
@@ -178,6 +224,30 @@
 		"oAP": "\/library\/images\/login-logo.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/library\/images\/menu-break.png": {
+		"ft": 32768,
+		"iS": 140,
+		"oA": 0,
+		"oAP": "\/library\/images\/menu-break.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/library\/images\/menu-dog-bg.jpg": {
+		"ft": 16384,
+		"iS": 187513,
+		"oA": 0,
+		"oAP": "\/library\/images\/menu-dog-bg.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/library\/images\/menu-dog-bg.png": {
+		"ft": 32768,
+		"iS": 862052,
+		"oA": 0,
+		"oAP": "\/library\/images\/menu-dog-bg.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/library\/images\/nothing.gif": {
 		"ft": 4194304,
@@ -208,6 +278,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/library\/js\/libs\/min\/modernizr.custom.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/library\/js\/min\/scripts-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/library\/js\/min\/min\/scripts-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

@@ -24,7 +24,7 @@ body.home {
 	background: -webkit-linear-gradient(left,  #199fb3 0%,#46b8ad 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right,  #199fb3 0%,#46b8ad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199fb3', endColorstr='#46b8ad',GradientType=1 ); /* IE6-9 */
-
+	
 }
 
 /*********************
@@ -43,105 +43,36 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	@include css-gradient(#199fb3,#46b8ad);
+	background: url(../images/menu-dog-bg.jpg) no-repeat center center;
+	background-size: cover;
 
-.nav {
-	border: 0;
-	ul {
-		background:$black;
-		margin-top:0;
+}
+.overlay nav{
+	top: 35%;
+	height: 60%;
+}
+div#logo-overlay{
+	display:block;
+	position: relative;
+	width: 40%;
+	max-width: 250px;
+	margin: 40px auto;
+
+
+	img{
+		width: 100%;
+		height: auto;
+
 	}
-	li {
-		float: left;
-		position: relative;
 
-		a {
-			border-bottom: 0;
-
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color: $white;
-				text-decoration: underline;
-			}
-		}
-
-		&:first-child {}
-		&:last-child {}
-
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
-			position: absolute;
-			visibility: hidden;
-			z-index: 8999;
-
-			li {
-
-				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-				}
-
-				&:first-child {}
-
-				&:last-child {
-
-					a {
-						border-bottom: 0;
-					}
-				}
-
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {
-					top:0;
-					left:100%;
-				}
-			}
-
-			/* highlight sub-menu current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current_page_ancestor {
-				a {}
-			}
-		}
-
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility:visible;
-		}
-
-	} /* end .menu ul li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-		a {}
-	}  /* end current highlighters */
-
-} /* end .nav */
-
+}
 /*********************
 SIDEBARS & ASIDES
 *********************/

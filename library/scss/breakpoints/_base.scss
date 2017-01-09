@@ -117,100 +117,177 @@ HEADER STYLES
 
 .header {
 	background-color: $black;
-	padding: 10px 0px;
-	@include row();
+	padding: 00px 0px 10px;
+	
 }
 
 	#logo {
 		margin: 0;
-		@include span-columns(3);
-		background-color: red;
+		@include span-columns(9);
+		//background-color: red;
+		padding: 15px 0 10px;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
 	}
 
 
 /*********************
 NAVIGATION STYLES
 *********************/
+div#navigation-wrapper{
+	//background: blue;
+	@include span-columns(1);
+	@include shift(2);
 
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
+	button#trigger-overlay{
+		background: url(../images/iv-menu-icon.png) no-repeat center center;
+		height: 50px;
+		width: 50px;
+		background-size: 100%;
+		float:right;
+		border:none;
+		text-indent: -9999px;
+	}
+}
+/****************** Overlay style ********************/
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: $black;
+}
 
-.nav {
-	border-bottom: 0;
-	margin: 0;
+/* Overlay closing cross */
+div#logo-overlay{
+	display:none;
+}
 
-	li {
+.overlay .overlay-close {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	right: 5%;
+	top: 25px;
+	border: none;
+	background: url(../images/iv-menu-close-icon.png) no-repeat center center;
+	background-size: 100%;
+	text-indent: -500%;
+	overflow: hidden;
+	
+}
 
-		a {
-			display: block;
-			color: $white;
-			text-decoration: none;
-			padding: 0.75em;
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 43%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
-			&:hover, &:focus {
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 65%;
+	position: relative;
+	//background: red;
+}
 
-			}
-		}
-
-		&:first-child {}
-
-		&:last-child {}
-
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-
-			li {
-
-				a {
-					padding-left: 30px;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
-				}
-
-				&:first-child {}
-
-				&:last-child {}
-
-			}
-
-		}
-
-	} /* end .menu li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-
-		a {}
-
-	}  /* end current highlighters */
-
-} /* end .nav */
+.overlay ul li {
+	display: block;
+	height: 8%;
+	margin-bottom: calc(100% / 7);
+	//min-height: 20px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	padding-bottom: calc(100% / 7);
+	line-height: 2em;
+}
 
 
+li#menu-item-19{
+	border: 1px solid $white;
+	padding: 20px 50px;
+	line-height: .5em;
+	border-radius: 100px;
+	height: 55px;
+	line-height: 1em;
+}
+li#menu-item-15 {
+	padding-bottom: 70px;
+	line-height: 2.5em;
+	&:after{
+		content: url(../images/menu-break.png);
+		position: absolute;
+		left: 0;
+		right: 0;
+		
+
+		
+
+	
+	
+	}
+	
+}
+.overlay ul li a {
+	font-size: 1.25em;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	text-decoration: none;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #f0f0f0;
+}
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 80%;
+		font-size: 1em;
+		margin-top: 20px;
+	}
+	.overlay ul li {
+		//min-height: 12px;
+		height: 10px;
+		height: 8%;
+	margin-bottom: calc(100% / 20);
+	}
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/
