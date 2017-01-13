@@ -79,12 +79,6 @@
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
-	"\/functions.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/functions.php",
-		"oF": 0
-		},
 	"\/header-old.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -107,12 +101,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/library\/admin.php",
-		"oF": 0
-		},
-	"\/library\/bones.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/library\/bones.php",
 		"oF": 0
 		},
 	"\/library\/css\/editor-style.css": {

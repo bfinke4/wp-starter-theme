@@ -34,7 +34,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 /*  WEBSITE MAIN WRAP */
-div#inner-content, div#inner-header, div#inner-footer{
+div#inner-header, div#inner-footer{
 	@include outer-container(90%);
 }
 
@@ -44,10 +44,16 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-color;
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 2px solid $link-color;
+	@include transition(all 0.1s ease-in-out);
 
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+		border-bottom: 3px solid $link-hover;
+		@include transition(all 0.1s ease-in-out);
 	}
 
 	/* on click */
@@ -116,7 +122,7 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $black;
+	@include css-gradient(#369186,#1A788C);
 	padding: 00px 0px 10px;
 	
 }
@@ -291,7 +297,47 @@ li#menu-item-15 {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+header.article-header{
+	@include css-gradient(#46b8ad, #199fb3);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@include clearfix;
+	
+	div#inner-article-header{
+		@include span-columns(10);
+		@include shift(1);
+		text-align: center;
+		color: $white;
+	}
+	div.page-title-rule{
+		height: 1px;
+		border-top: 1px solid $white;
+		width: 100px;
+		margin: 0 auto;
 
+	}
+	div.page-title-excerpt{
+		font-size: 1.25em;
+		letter-spacing: .01em;
+		font-weight: 400;
+		
+		p{
+			-webkit-hyphens: none;
+			-moz-hyphens: none;
+			-ms-hyphens: none;
+			hyphens: none;
+			}
+	}
+	h1.page-title{
+		margin: 0px;
+		margin-top: 24px;
+		text-transform: uppercase;
+		font-size: 1.50em;  //24px
+		letter-spacing: .05em;
+		font-weight: 400;
+	}
+
+}
 
 /******************************************************************
 PAGE NAVI STYLES

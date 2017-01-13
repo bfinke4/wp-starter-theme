@@ -32,3 +32,14 @@ a, a:visited {
 		-webkit-tap-highlight-color : rgba( 46, 172, 195, 0.9 );
 	}
 }
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+header.article-header{
+
+	div#inner-article-header{
+		@include span-columns(8);
+		@include shift(2);
+	}
+}

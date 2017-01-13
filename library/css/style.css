@@ -916,11 +916,11 @@ body.home {
 LAYOUT & GRID STYLES
 *********************/
 /*  WEBSITE MAIN WRAP */
-div#inner-content, div#inner-header, div#inner-footer {
+div#inner-header, div#inner-footer {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto; }
-  div#inner-content::after, div#inner-header::after, div#inner-footer::after {
+  div#inner-header::after, div#inner-footer::after {
     clear: both;
     content: "";
     display: block; }
@@ -930,11 +930,19 @@ LINK STYLES
 *********************/
 a, a:visited {
   color: #70C9BA;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #70C9BA;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #9ADED2; }
+    color: #9ADED2;
+    border-bottom: 3px solid #9ADED2;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
   a:link, a:visited:link {
     /*
 		this highlights links on iPhones/iPads.
@@ -983,7 +991,12 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #414042;
+  background-color: #1A788C;
+  background-image: -webkit-gradient(linear, left, right, from(#369186), to(#1A788C));
+  background-image: -webkit-linear-gradient(left, #369186, #1A788C);
+  background-image: -moz-linear-gradient(left, #369186, #1A788C);
+  background-image: -o-linear-gradient(left, #369186, #1A788C);
+  background-image: linear-gradient(to right, #369186, #1A788C);
   padding: 00px 0px 10px; }
 
 #logo {
@@ -1133,6 +1146,51 @@ li#menu-item-15 {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+header.article-header {
+  background-color: #199fb3;
+  background-image: -webkit-gradient(linear, left, right, from(#46b8ad), to(#199fb3));
+  background-image: -webkit-linear-gradient(left, #46b8ad, #199fb3);
+  background-image: -moz-linear-gradient(left, #46b8ad, #199fb3);
+  background-image: -o-linear-gradient(left, #46b8ad, #199fb3);
+  background-image: linear-gradient(to right, #46b8ad, #199fb3);
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  header.article-header::after {
+    clear: both;
+    content: "";
+    display: block; }
+  header.article-header div#inner-article-header {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 82.9403913294%;
+    margin-left: 8.5298043353%;
+    text-align: center;
+    color: #fff; }
+    header.article-header div#inner-article-header:last-child {
+      margin-right: 0; }
+  header.article-header div.page-title-rule {
+    height: 1px;
+    border-top: 1px solid #fff;
+    width: 100px;
+    margin: 0 auto; }
+  header.article-header div.page-title-excerpt {
+    font-size: 1.25em;
+    letter-spacing: .01em;
+    font-weight: 400; }
+    header.article-header div.page-title-excerpt p {
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none; }
+  header.article-header h1.page-title {
+    margin: 0px;
+    margin-top: 24px;
+    text-transform: uppercase;
+    font-size: 1.50em;
+    letter-spacing: .05em;
+    font-weight: 400; }
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -1261,31 +1319,6 @@ NAVIGATION STYLES
   /*********************
 SIDEBARS & ASIDES
 *********************/
-  .sidebar {
-    margin-top: 2.2em; }
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em; }
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0; }
-    .widget ul li {
-      margin-bottom: 0.75em;
-      /* deep nesting */ }
-      .widget ul li ul {
-        margin-top: 0.75em;
-        padding-left: 1em; }
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
   /*********************
 FOOTER STYLES
 *********************/
@@ -1334,7 +1367,18 @@ be seen on the Desktop.
 		so it basically works like the :hover selector
 		for mobile devices.
 		*/
-      -webkit-tap-highlight-color: rgba(46, 172, 195, 0.9); } }
+      -webkit-tap-highlight-color: rgba(46, 172, 195, 0.9); }
+  /*********************
+POSTS & CONTENT STYLES
+*********************/
+  header.article-header div#inner-article-header {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 65.8807826589%;
+    margin-left: 17.0596086706%; }
+    header.article-header div#inner-article-header:last-child {
+      margin-right: 0; } }
 
 /*********************
 LARGE VIEWING SIZE
@@ -1350,7 +1394,18 @@ Stylesheet: Super Large Monitor Stylesheet
 You can add some advanced styles here if you like. This kicks in
 on larger screens.
 
-******************************************************************/ }
+******************************************************************/
+  /*********************
+POSTS & CONTENT STYLES
+*********************/
+  header.article-header div#inner-article-header {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 48.8211739883%;
+    margin-left: 25.5894130058%; }
+    header.article-header div#inner-article-header:last-child {
+      margin-right: 0; } }
 
 /*********************
 RETINA (2x RESOLUTION DEVICES)

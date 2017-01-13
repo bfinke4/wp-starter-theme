@@ -231,34 +231,6 @@ div#logo-overlay {
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.sidebar {
-  margin-top: 2.2em; }
-
-.widgettitle {
-  border-bottom: 2px solid #444;
-  margin-bottom: 0.75em; }
-
-.widget {
-  padding: 0 10px;
-  margin: 2.2em 0; }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */ }
-    .widget ul li ul {
-      margin-top: 0.75em;
-      padding-left: 1em; }
-
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
 /*********************
 FOOTER STYLES
 *********************/
@@ -301,6 +273,18 @@ a, a:visited {
 		for mobile devices.
 		*/
     -webkit-tap-highlight-color: rgba(46, 172, 195, 0.9); }
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+header.article-header div#inner-article-header {
+  float: left;
+  display: block;
+  margin-right: 2.3576520234%;
+  width: 65.8807826589%;
+  margin-left: 17.0596086706%; }
+  header.article-header div#inner-article-header:last-child {
+    margin-right: 0; }
 
 /*
 you can call the larger styles if you want, but there's really no need

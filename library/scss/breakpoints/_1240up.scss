@@ -9,3 +9,13 @@ on larger screens.
 
 ******************************************************************/
 
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+header.article-header{
+
+	div#inner-article-header{
+		@include span-columns(6);
+		@include shift(3);
+	}
+}
